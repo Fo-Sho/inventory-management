@@ -1,38 +1,57 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-inventory-form,
+.dashboard {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: block;
+  margin: 10px 0 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #28a745;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #218838;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dashboard .overview {
+  text-align: left;
+}
+
+.dashboard ul {
+  list-style-type: none;
+  padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+.dashboard li {
+  background-color: #ffc107;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 3px;
   }
+
+.charts {
+  margin-top: 20px;
 }
